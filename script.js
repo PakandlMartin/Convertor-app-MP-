@@ -201,11 +201,11 @@ const inputNumOne = Number(inputFirstCurrency.value);
 ConversionOfCurrency(selectFirstCurrency.value,selectSecondCurrency.value, inputNumOne, inputSecondCurrency);
 
 // RENDER IMG AND TEXT ABOUT CURRENCY IN 1. SELECTOR
-document.querySelector("#selectFirstCurrency > div > a > img").src = `/ImgFlags/${selSecond}-flag-tw.png`;
+document.querySelector("#selectFirstCurrency > div > a > img").src = `ImgFlags/${selSecond}-flag-tw.png`;
 document.querySelector("#selectFirstCurrency > div > a > label").textContent = `${selSecond}`;
    
 // RENDER IMG AND TEXT ABOUT CURRENCY IN 2. SELECTOR
-document.querySelector("#selectSecondCurrency > div > a > img").src = `/ImgFlags/${selFirst}-flag-tw.png`;
+document.querySelector("#selectSecondCurrency > div > a > img").src = `ImgFlags/${selFirst}-flag-tw.png`;
 document.querySelector("#selectSecondCurrency > div > a > label").textContent = `${selFirst}`
 
 // PUT NAME OF FIRST CURRENCY TO SECOND SELECTOR
