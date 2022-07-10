@@ -319,6 +319,14 @@ border-radius: 50%;
                     color: rgb(18, 16, 16);
                     background-color:rgb(232, 242, 246); ;
                 }       
+    
+          td {
+            font-size: 0.8rem;
+          }
+
+          tr {
+            font-size: 0.8rem;
+         }
 }
 
 
