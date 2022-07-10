@@ -323,13 +323,18 @@ border-radius: 50%;
     .AboutAppText {
     font-weight: 400;
     }
-          td {
-            font-size: 0.8rem;
-          }
 
-          tr {
-            font-size: 0.8rem;
-         }
+    td {
+    font-size: 0.8rem;
+    }
+
+    tr {
+    font-size: 0.8rem;
+    }
+
+    .fa {
+    border-radius: 40%;
+    }
 }
 
 
@@ -363,5 +368,8 @@ border-radius: 50%;
 .successMailNotice {
     display: none;
 }
+
+
+
 
 
