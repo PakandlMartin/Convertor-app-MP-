@@ -91,8 +91,6 @@ const formatTodayStr = formatDate(date);
 fetch(`https://api.exchangerate.host/${formatTodayStr}?base=CZK`)
 .then(response => response.json())
 .then(data => {
-
-    console.log(data.rates)
     let rates = data.rates
 
     currency = new Currency(rates.CZK,rates.EUR,rates.GBP,rates.USD,rates.CHF,rates.HRK,rates.HUF,rates.PLN,rates.TRY);
@@ -112,20 +110,14 @@ function ConversionOfCurrency(currencyOne = "CZK", currencyTwo = "EUR", numberOf
     
 if (currency[currencyOne] === 1) {
 resultNum = (((currency[currencyOne]) * (currency[currencyTwo])) * parseFloat(numberOfMoney)).toFixed(2);
-console.log("example 1")
-console.log(currency[currencyOne]);
-console.log(currency[currencyTwo])
+
 } else if (currency[currencyOne] > 1) {
-    console.log("lala")
-    console.log(currency[currencyOne]);
+
     resultNum = (((currency[currencyTwo]) / (currency[currencyOne])) * parseFloat(numberOfMoney)).toFixed(3);
-console.log(currency[currencyTwo])
+
 }
 else {
     resultNum = ((currency[currencyTwo] / currency[currencyOne]) * parseFloat(numberOfMoney)).toFixed(2);
-    console.log("example 2")
-console.log(currency[currencyOne]);
-console.log(currency[currencyTwo])
 }
     input.value = resultNum
 };
@@ -301,13 +293,11 @@ const formatDate = (date) => {
 function FormatDateAndGetApiInfo (date) {
     const formatTodayStr = formatDate(date);
     dateOfListInput.value = formatTodayStr
-    console.log(formatTodayStr)
     
         fetch(`https://api.exchangerate.host/${formatTodayStr}?base=CZK`)
         .then(response => response.json())
         .then(data => {
-            
-           console.log(data)    
+           
             currencyToCZK = new CurrencyToCZK(
             data.rates.CZK,
             data.rates.EUR,
