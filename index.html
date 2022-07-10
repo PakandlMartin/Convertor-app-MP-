@@ -140,6 +140,10 @@
                               <option value="USD" data-imagesrc="ImgFlags/USD-flag-tw.png">USD</option>
                               <option value="GBP" data-imagesrc="ImgFlags/GBP-flag-tw.png">GBP</option>
                               <option value="CHF" data-imagesrc="ImgFlags/CHF-flag-tw.png">CHF</option>
+                              <option value="HRK" data-imagesrc="ImgFlags/HRK-flag-tw.png">HRK</option>
+                              <option value="HUF" data-imagesrc="ImgFlags/HUF-flag-tw.png">HUF</option>
+                              <option value="PLN" data-imagesrc="ImgFlags/PLN-flag-tw.png">PLN</option>                
+                              <option value="TRY" data-imagesrc="ImgFlags/TRY-flag-tw.png">TRY</option>
                           </select>
 
                           <input type="text" class="form-control inputFirstCurrency" aria-label="Text input with dropdown button" style="padding: 0.7rem 1rem;" placeholder="Částka" id="floatingInputGrid">
@@ -162,6 +166,10 @@
                               <option value="USD" data-imagesrc="ImgFlags/USD-flag-tw.png">USD</option>
                               <option value="GBP" data-imagesrc="ImgFlags/GBP-flag-tw.png">GBP</option>
                               <option value="CHF" data-imagesrc="ImgFlags/CHF-flag-tw.png">CHF</option>
+                              <option value="HRK" data-imagesrc="ImgFlags/HRK-flag-tw.png">HRK</option>
+                              <option value="HUF" data-imagesrc="ImgFlags/HUF-flag-tw.png">HUF</option>
+                              <option value="PLN" data-imagesrc="ImgFlags/PLN-flag-tw.png">PLN</option>                
+                              <option value="TRY" data-imagesrc="ImgFlags/TRY-flag-tw.png">TRY</option>
                           </select>
                           <input type="text" class="form-control inputSecondCurrency" style="padding: 0.7rem 1rem;"  aria-label="Text input with dropdown button" placeholder="Částka">
                           </ul>
@@ -211,10 +219,24 @@
                         <th scope="col">Měna</th>
                         <th scope="col">Množství</th>
                         <th scope="col">Kód</th>
-                        <th scope="col">Kurz (na KČ)</th>
+                        <th scope="col">Kurz (KČ)</th>
                       </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                        <th scope="row">Eurozóna <img src="ImgFlags/EUR-flag-tw.png" alt="" width="25rem"></th>
+                        <td>Euro</td>
+                        <td>1</td>
+                        <td>EUR</td>
+                        <td id="EURTab"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Švýcarsko <img src="ImgFlags/CHF-flag-tw.png" alt="" width="25rem"></th>
+                        <td>Švýcarský frank</td>
+                        <td>1</td>
+                        <td>CHF</td>
+                        <td id="CHFTab"></td>
+                      </tr>
                       <tr>
                         <th scope="row">USA <img src="ImgFlags/USD-flag-tw.png" alt="" width="25rem"></th>
                         <td> Dolar</td>
@@ -230,18 +252,32 @@
                         <td id="GBPTab"></td>
                       </tr>
                       <tr>
-                        <th scope="row">Eurozóna <img src="ImgFlags/EUR-flag-tw.png" alt="" width="25rem"></th>
-                        <td>Euro</td>
+                        <th scope="row">Chorvatsko <img src="ImgFlags/HRK-flag-tw.png" alt="" width="25rem"></th>
+                        <td>Kuna</td>
                         <td>1</td>
-                        <td>EUR</td>
-                        <td id="EURTab"></td>
+                        <td>HRK</td>
+                        <td id="HRKTab"></td>
                       </tr>
                       <tr>
-                        <th scope="row">Švýcarsko <img src="ImgFlags/CHF-flag-tw.png" alt="" width="25rem"></th>
-                        <td>Švýcarský frank</td>
+                        <th scope="row">Maďarsko <img src="ImgFlags/HUF-flag-tw.png" alt="" width="25rem"></th>
+                        <td>Forint</td>
+                        <td>100</td>
+                        <td>HUF</td>
+                        <td id="HUFTab"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Polsko <img src="ImgFlags/PLN-flag-tw.png" alt="" width="25rem"></th>
+                        <td>Zlotý</td>
                         <td>1</td>
-                        <td>CHF</td>
-                        <td id="CHFTab"></td>
+                        <td>PLN</td>
+                        <td id="PLNTab"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Turecko <img src="ImgFlags/TRY-flag-tw.png" alt="" width="25rem"></th>
+                        <td>Lira</td>
+                        <td>1</td>
+                        <td>TRY</td>
+                        <td id="TRYTab"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -398,3 +434,4 @@
 
 </body>
 </html>
+
