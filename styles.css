@@ -276,6 +276,11 @@ border-radius: 50%;
 
 
 @media only screen and (max-width: 590px) {
+    
+    body {
+        font-size: 0.8rem;
+    }
+    
     #myTab {
         display: none !important;
         }
@@ -301,6 +306,7 @@ border-radius: 50%;
 
         .titleH3 {
                 font-size: 1.6rem;
+                margin-top: 0rem;
                 }
 
         .navbar-toggler {
