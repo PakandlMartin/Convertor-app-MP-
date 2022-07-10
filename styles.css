@@ -320,6 +320,9 @@ border-radius: 50%;
                     background-color:rgb(232, 242, 246); ;
                 }       
     
+    .AboutAppText {
+    font-weight: 400;
+    }
           td {
             font-size: 0.8rem;
           }
