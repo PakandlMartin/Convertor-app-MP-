@@ -277,7 +277,11 @@ border-radius: 50%;
 
 @media only screen and (max-width: 590px) {
     
+    
+    html,
     body {
+           width:100%;
+      overflow-x:hidden;
         font-size: 0.8rem;
     }
     
@@ -334,6 +338,10 @@ border-radius: 50%;
 
     .fa {
     border-radius: 40%;
+    }
+    
+      .footerMy {
+        font-size: 0.9rem;
     }
 }
 
